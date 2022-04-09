@@ -71,7 +71,7 @@ def load_env(pattern, core_dir=worldgen_path(), envs_dir='examples', xmls_dir='x
             return MjSim(model)
         env = Env(get_sim=get_sim)
     # Loads environment from a python file
-    elif pattern.endswith("py") and os.path.exists(pattern):
+    elif pattern.endswith("py"): #and os.path.exists(pattern):
         print("Loading env from the module: %s" % pattern)
         module = run_path(pattern)
         make_env = module["make_env"]

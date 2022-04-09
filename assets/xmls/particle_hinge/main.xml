@@ -7,7 +7,7 @@
 	<option timestep="0.005"/>
 	<worldbody>
 		<body name="particle" pos="0.15 0.15 0.15">
-			<joint axis="1 0 0" damping="10" name="tx" pos="0 0 0" type="slide"></joint>
+			<joint axis="1 0 0" damping="10" name="tx" pos="0 10 0" type="slide"></joint>
 			<joint axis="0 1 0" damping="10" name="ty" pos="0 0 0" type="slide"></joint>
 			<joint axis="0 0 1" damping="10000" name="tz" pos="0 0 0" type="slide"></joint>
 			<joint axis="0 0 1" damping="10" name="rz" pos="0 0 0" type="hinge"></joint>

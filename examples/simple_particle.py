@@ -10,7 +10,7 @@ def get_reward(sim):
 
 
 def get_sim(seed):
-    world_params = WorldParams(size=(4., 4., 2.5))
+    world_params = WorldParams(size=(4., 4., 2.5),randomize_light=True)
     builder = WorldBuilder(world_params, seed)
     floor = Floor()
     builder.append(floor)
